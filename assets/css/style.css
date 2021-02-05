@@ -1,11 +1,21 @@
 * { color: #333; }
 
+body{
+    background-image: url(../images/bg-image.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Lexend Mega', sans-serif;
+}
 /*CABEÇALHO*/
+.hidden{
+    display: none;
+}
 
 .cabecalho{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    background-color: #fff;
     border-bottom: 1px solid #333;
 }
 
@@ -17,6 +27,34 @@ header img{
     margin-bottom: 25px;
 }
 
+.cabecalho a{
+    display: table-cell;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+    text-align: center;
+    margin-right: 60px;
+    margin-top: 30px;
+    padding-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12pt;
+    width: 90px;
+    height: 30px;
+    background-color:rgb(39, 202, 252);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+}
+
+.cabecalho a:hover{
+    background-color: rgb(45, 164, 201);
+    transition: .4s;
+    color: white;
+}
+
 /*Div apresentação*/
 
 .apresentacao{
@@ -25,7 +63,7 @@ header img{
     align-items: center;
     width: 600px;
     margin: 0 auto;
-    background-color: rgb(91, 212, 248);
+    background-color: rgb(241, 216, 72);
     margin-top: 50px;
     border-radius: 5px;
     padding: 40px;
@@ -33,7 +71,7 @@ header img{
 }
 
 .apresentacao h1{
-    font-size: 40pt;
+    font-size: 30pt;
 }
 
 .apresentacao p{
@@ -44,7 +82,7 @@ header img{
 
 .login label{
     display: inline-block;
-    font-size: 15pt;
+    font-size: 12pt;
     padding: 15px;
 }
 
