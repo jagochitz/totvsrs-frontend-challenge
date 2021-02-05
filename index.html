@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
         <title>Meu projeto To-do list - TOTVS RS</title>
     </head>
     <body>
@@ -10,21 +11,27 @@
             <img src="assets/images/logo-totvs-rs.png" alt="logo">
         </header>
         
-        <div>
+        <div class="apresentacao">
             <h1>To do list</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Ipsum voluptatibus nihil necessitatibus porro numquam enim consectetur beatae sit, eveniet quibusdam saepe omnis ex molestias a. 
                 Dolorum molestiae delectus tempore? Quod.
             </p>
+
+            <form class="login" action="" name="f_login" method="">
+                <label for="">e-mail:</label>
+                <input type="text" name="f_e-mail">
+                <label for="">Senha:</label>
+                <input type="password" name="f_senha">
+                <button class="btn_login">Entrar</button>
+            </form>
+
+            <p>
+                <a class="cadastre-se" href="#cadastro">cadastre-se</a>
+            </p>
         </div>
 
-        <form action="" name="f_login" method="">
-            <label for="">e-mail:</label>
-            <input type="text" name="f_e-mail">
-            <label for="">Senha:</label>
-            <input type="password" name="f_senha">
-            <button class="btn_login">Entrar</button>
-        </form>
+        
     </body>
 </html>
