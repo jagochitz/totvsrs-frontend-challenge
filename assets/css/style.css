@@ -3,6 +3,7 @@
 body{
     background-image: url(../images/bg-image.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Lexend Mega', sans-serif;
 }
 /*CABEÇALHO*/
@@ -25,34 +26,6 @@ header img{
     align-items: center;
     width: 400px;
     margin-bottom: 25px;
-}
-
-.cabecalho a{
-    display: table-cell;
-    position: absolute;
-    justify-content: flex-end;
-    align-items: flex-end;
-    align-self: flex-end;
-    text-align: center;
-    margin-right: 60px;
-    margin-top: 30px;
-    padding-top: 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12pt;
-    width: 90px;
-    height: 30px;
-    background-color:rgb(39, 202, 252);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 1px 1px 5px black;
-}
-
-.cabecalho a:hover{
-    background-color: rgb(45, 164, 201);
-    transition: .4s;
-    color: white;
 }
 
 /*Div apresentação*/
@@ -123,7 +96,55 @@ header img{
     text-transform: uppercase;
 }
 
-.cadastre-se:hover{
-    color: white;
-    transition: .3s;
+
+/* Seção de Cadastro */
+
+#main_cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 600px;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 1px 1px 5px black;
+}
+
+#main_cadastro h2{
+    font-size: 30pt;
+    text-transform: uppercase;
+}
+
+.cadastro input{
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+    box-shadow: 1px 1px 5px black;    
+}
+
+.fazer_login{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cadastro .btn_f_login{
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+    padding-top: 6px;
+    font-size: 15pt;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    background-color:  rgb(39, 202, 252);
+    color: blanchedalmond;
+    cursor: pointer;
+}
+
+.btn_f_login:hover{
+    background-color:  rgb(45, 164, 201);
+    transition: .4s;
 }

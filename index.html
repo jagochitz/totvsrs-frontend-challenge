@@ -11,29 +11,62 @@
     <body>
         <header class="cabecalho">
             <img src="assets/images/logo-totvs-rs.png" alt="logo">
-            <a class="entrar" href="#">entrar</a>
         </header>
-        
-        <div class="entrar hidden">
-            <h1>To do list</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Ipsum voluptatibus nihil necessitatibus porro numquam enim consectetur beatae sit, eveniet quibusdam saepe omnis ex molestias a. 
-                Dolorum molestiae delectus tempore? Quod.
-            </p>
 
-            <form class="login" action="" name="f_login" method="">
-                <label for="">e-mail:</label>
-                <input type="text" name="f_e-mail">
+        <nav>
+            <a href="#login"></a>
+            <a href="#cadastro"></a>
+        </nav>
+        
+        <section id="main_login">
+            <div id="login" class="entrar apresentacao">
+                <h1>To do list</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsum voluptatibus nihil necessitatibus porro numquam enim consectetur beatae sit, eveniet quibusdam saepe omnis ex molestias a. 
+                    Dolorum molestiae delectus tempore? Quod.
+                </p>
+
+                <form class="login" action="main.html" name="f_login" method="get">
+                    <label for="">e-mail:</label>
+                    <input type="text" name="f_e-mail">
+                    <label for="">Senha:</label>
+                    <input type="password" name="f_senha">
+                    <button class="btn_login">Entrar</button>
+                </form>
+
+                <p>
+                    Ainda não tem cadastro? <br>
+                    <a class="cadastre-se" href="#cadastro">cadastre-se</a>
+                </p>
+            </div>
+        </section>
+        
+        <section id="main_cadastro">
+            <h2>cadastro</h2>
+            <form id="cadastro" class="cadastro" action="main.html" name="f_cadastro" method="get">
+                <label for="">Nome:</label>
+                <input type="text" name="nome"><br>
+                <label for="">Nasc:</label>
+                <input type="date"><br>
+                <label for="">email:</label>
+                <input type="text" name="email"><br>
                 <label for="">Senha:</label>
-                <input type="password" name="f_senha">
-                <button class="btn_login">Entrar</button>
+                <input type="password" name="senha" id="senha"><br>
+                <label for="">Confirma senha:</label>
+                <input type="password" name="conf_senha" id="conf_senha"><br>
+                <input class="btn_f_login" type="submit" value="Cadastrar">
+                <input class="btn_f_login" type="reset" value="Limpar"><br>
             </form>
 
             <p>
-                <a class="cadastre-se" href="#cadastro">cadastre-se</a>
+                Já tem cadasto? <br>
+                <a class="fazer_login" href="#login">Fazer login</a>
             </p>
-        </div>
+
+
+            
+        </section>
 
     <script src="assets/js/app.js"></script>    
     </body>
