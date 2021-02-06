@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Meu projeto To-do list - TOTVS RS</title>
 </head>
 <body>
-    <div id="tarefas-app">      
-        <div class="container">
+    
+    <header class="cabecalho">
+        <img src="assets/images/logo-totvs-rs.png" alt="logo">
+    </header>
+
+    <div class="tarefas_app" id="tarefas_app">      
+        <div class="main_tarefas_app">
       
-          <h1 class="app-cabecalho">ToDo List TOTVS RS</h1>
+          <h1>ToDo List TOTVS RS</h1>
       
-          <div class="adicionar-tarefa-container">
-            <input type="text" placeholder="Adicionar nova tarefa" id="campo-texto-tarefa">
-            <input type="submit" value="Add" id="botao-submit-tarefa" title="Adicionar tarefa">
+          <div class="add_tarefa_container">
+            <input type="text" placeholder="Adicionar nova tarefa" id="campo_texto_tarefa">
+            <input type="submit" value="Add" id="botao_submit_tarefa" title="Adicionar tarefa">
           </div>
-      
-          <small></small>
-      
-          <ul id="lista-tarefas">
+           
+          <ul class="lista_tarefas" id="lista_tarefas">
       
           </ul>
       
